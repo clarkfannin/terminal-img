@@ -15,7 +15,7 @@ pip install Pillow rich
 python main.py
 ```
 
-Replace `'image.jpg'` in the script with your image path.
+Replace `'image.png'` in the script with your image path.
 
 ## How it works
 
