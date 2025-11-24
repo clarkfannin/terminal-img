@@ -4,26 +4,22 @@ import shutil
 
 terminal_width, terminal_height = shutil.get_terminal_size()
 
-
 console = Console() # rich
 
-
-im = Image.open('image.jpg', 'r')
+im = Image.open('image.png', 'r')
 orig_width, orig_height = im.size
 
-max_width = terminal_width - 4  # padding
-max_height = (terminal_height - 4) * 5 
+max_width = terminal_width - 4 # padding
+max_height = terminal_height - 4 # padding
 
 scale = min(max_width / orig_width, max_height / orig_height)
 new_width = int(orig_width * scale)
-new_height = int(orig_height * scale)
+new_height = int(orig_height * scale * 0.5)
 
 im = im.resize((new_width, new_height))
 width, height = im.size
 
 pixel_values = list(im.getdata())
-
-
 
 left_padding = (terminal_width - width) // 2
 
