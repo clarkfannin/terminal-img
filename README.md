@@ -12,7 +12,7 @@ pip install Pillow rich
 
 ## Usage
 ```bash
-python script.py
+python main.py
 ```
 
 Replace `'image.jpg'` in the script with your image path.
