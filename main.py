@@ -8,7 +8,7 @@ terminal_width, terminal_height = shutil.get_terminal_size()
 console = Console() # rich
 
 
-im = Image.open('image.webp', 'r')
+im = Image.open('image.jpg', 'r')
 orig_width, orig_height = im.size
 
 max_width = terminal_width - 4  # padding
